@@ -9,3 +9,6 @@ build:
 
 package-install: 
 	uv tool install $(wildcard dist/*.whl)
+
+lint:
+	uv run ruff check brain_games
